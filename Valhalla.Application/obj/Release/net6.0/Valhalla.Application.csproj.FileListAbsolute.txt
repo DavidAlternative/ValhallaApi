@@ -1,0 +1,15 @@
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\bin\Release\net6.0\Valhalla.Application.deps.json
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\bin\Release\net6.0\Valhalla.Application.dll
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\bin\Release\net6.0\Valhalla.Application.pdb
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\bin\Release\net6.0\Valhalla.Domain.dll
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\bin\Release\net6.0\Valhalla.Domain.pdb
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\obj\Release\net6.0\Valhalla.Application.csproj.AssemblyReference.cache
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\obj\Release\net6.0\Valhalla.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\obj\Release\net6.0\Valhalla.Application.AssemblyInfoInputs.cache
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\obj\Release\net6.0\Valhalla.Application.AssemblyInfo.cs
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\obj\Release\net6.0\Valhalla.Application.csproj.CoreCompileInputs.cache
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\obj\Release\net6.0\Valhalla.Application.csproj.CopyComplete
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\obj\Release\net6.0\Valhalla.Application.dll
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\obj\Release\net6.0\refint\Valhalla.Application.dll
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\obj\Release\net6.0\Valhalla.Application.pdb
+C:\Users\david\Desktop\Api\Valhalla\Valhalla.Application\obj\Release\net6.0\ref\Valhalla.Application.dll

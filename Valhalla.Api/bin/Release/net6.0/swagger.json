@@ -1,0 +1,1052 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "MyAPI",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Brand": {
+      "get": {
+        "tags": [
+          "Brand"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Brand"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateBrandRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Brand"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateBrandRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Brand/{id}": {
+      "get": {
+        "tags": [
+          "Brand"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "Idbrand",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Brand"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "Idbrand",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Favorite": {
+      "get": {
+        "tags": [
+          "Favorite"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Favorite"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateFavoriteRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Favorite/{id}": {
+      "get": {
+        "tags": [
+          "Favorite"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Favorite"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Order": {
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateOrderRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Order/{id}": {
+      "get": {
+        "tags": [
+          "Order"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "Idorder",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Order"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "Idorder",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Token": {
+      "post": {
+        "tags": [
+          "Token"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/JwtAuthenticationRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Urus": {
+      "get": {
+        "tags": [
+          "Urus"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Urus"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateUrusRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Urus"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateUrusRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Urus/{id}": {
+      "get": {
+        "tags": [
+          "Urus"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "Idurus",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Urus"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "Idurus",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateUserRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateUserRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/{id}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "Iduser",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Vehicle": {
+      "get": {
+        "tags": [
+          "Vehicle"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Vehicle"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateVehicleRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Vehicle"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateVehicleRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Vehicle/{id}": {
+      "get": {
+        "tags": [
+          "Vehicle"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "Idvehicle",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Vehicle"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "Idvehicle",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/VehicleColor": {
+      "get": {
+        "tags": [
+          "VehicleColor"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "VehicleColor"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateVehicleColorRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "VehicleColor"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateVehicleColorRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/VehicleColor/{id}": {
+      "get": {
+        "tags": [
+          "VehicleColor"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "Idcolor",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "VehicleColor"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "Idcolor",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CreateBrandRequest": {
+      "type": "object",
+      "properties": {
+        "brandName": {
+          "type": "string"
+        },
+        "imageUrl": {
+          "type": "string"
+        }
+      }
+    },
+    "CreateFavoriteRequest": {
+      "type": "object",
+      "properties": {
+        "iduser": {
+          "type": "string"
+        },
+        "idvehicle": {
+          "type": "string"
+        }
+      }
+    },
+    "CreateOrderRequest": {
+      "type": "object",
+      "properties": {
+        "orderedAt": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "iduser": {
+          "type": "string"
+        },
+        "price": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "userAddress": {
+          "type": "string"
+        },
+        "userPhone": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "zipCode": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idvehicle": {
+          "type": "string"
+        },
+        "idurus": {
+          "type": "string"
+        }
+      }
+    },
+    "CreateUrusRequest": {
+      "type": "object",
+      "properties": {
+        "frenos": {
+          "type": "string"
+        },
+        "llantas": {
+          "type": "string"
+        },
+        "pintura": {
+          "type": "string"
+        },
+        "vista": {
+          "type": "string"
+        },
+        "asientosElectricos": {
+          "type": "string"
+        },
+        "cinturones": {
+          "type": "string"
+        },
+        "bordado": {
+          "type": "string"
+        },
+        "asistenciaAutopista": {
+          "type": "string"
+        },
+        "aperturaTraseraSmart": {
+          "type": "string"
+        },
+        "visionNocturna": {
+          "type": "string"
+        },
+        "washingPackage": {
+          "type": "string"
+        },
+        "price": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "CreateUserRequest": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "secondName": {
+          "type": "string"
+        },
+        "firstSurname": {
+          "type": "string"
+        },
+        "secondSurname": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "dni": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "birthdate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userPassword": {
+          "type": "string"
+        },
+        "userAddress": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "zipCode": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "CreateVehicleColorRequest": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "type": "string"
+        },
+        "idvehicle": {
+          "type": "string"
+        }
+      }
+    },
+    "CreateVehicleRequest": {
+      "type": "object",
+      "properties": {
+        "vehicleName": {
+          "type": "string"
+        },
+        "idbrand": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "brandName": {
+          "type": "string"
+        },
+        "isNew": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "price": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "imgUrl": {
+          "type": "string"
+        }
+      }
+    },
+    "JwtAuthenticationRequest": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      }
+    },
+    "UpdateBrandRequest": {
+      "type": "object",
+      "properties": {
+        "brandName": {
+          "type": "string"
+        },
+        "imageUrl": {
+          "type": "string"
+        }
+      }
+    },
+    "UpdateUrusRequest": {
+      "type": "object",
+      "properties": {
+        "frenos": {
+          "type": "string"
+        },
+        "llantas": {
+          "type": "string"
+        },
+        "pintura": {
+          "type": "string"
+        },
+        "vista": {
+          "type": "string"
+        },
+        "asientosElectricos": {
+          "type": "string"
+        },
+        "cinturones": {
+          "type": "string"
+        },
+        "bordado": {
+          "type": "string"
+        },
+        "asistenciaAutopista": {
+          "type": "string"
+        },
+        "aperturaTraseraSmart": {
+          "type": "string"
+        },
+        "visionNocturna": {
+          "type": "string"
+        },
+        "washingPackage": {
+          "type": "string"
+        },
+        "price": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "UpdateUserRequest": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "secondName": {
+          "type": "string"
+        },
+        "firstSurname": {
+          "type": "string"
+        },
+        "secondSurname": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "dni": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "birthdate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "userPassword": {
+          "type": "string"
+        },
+        "userAddress": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "zipCode": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "UpdateVehicleColorRequest": {
+      "type": "object",
+      "properties": {
+        "color": {
+          "type": "string"
+        },
+        "idvehicle": {
+          "type": "string"
+        }
+      }
+    },
+    "UpdateVehicleRequest": {
+      "type": "object",
+      "properties": {
+        "vehicleName": {
+          "type": "string"
+        },
+        "idbrand": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "brandName": {
+          "type": "string"
+        },
+        "isNew": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "price": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "imgUrl": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": { }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}
